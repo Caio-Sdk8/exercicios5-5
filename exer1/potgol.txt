@@ -1,0 +1,24 @@
+Programa{
+    inteiro nota
+
+    inicio{
+        ESCREVA ("Nota")
+
+        ESCREVA ("Insira uma nota de 0 a 10.")
+        LEIA (nota)
+
+        ENQUANTO (nota > 10) FAÇA{
+            ESCREVA ("A nota inserida não é valida, repita o processo novamente.")
+
+            ESCREVA ("Insira uma nota de 0 a 10.")
+            LEIA (nota)
+        }
+
+        ENQUANTO (nota < 0) FAÇA{
+            ESCREVA ("A nota inserida não é valida, repita o processo novamente.")
+
+            ESCREVA ("Insira uma nota de 0 a 10.")
+            LEIA (nota)
+        }
+    }
+}

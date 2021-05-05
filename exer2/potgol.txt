@@ -1,0 +1,35 @@
+Programa{
+    caractere nome
+    caractere senha
+
+    inicio{
+
+        ESCREVA ("Cadastro:")
+
+        ESCREVA ("Insira seu nome de usuario:")
+        LEIA (nome)
+
+        ESCREVA ("Insira sua senha:")
+        LEIA (senha)
+
+        SE (nome != senha){
+            ESCREVA ("Muito obrigado, E bem vindo!!!")
+        }
+
+        ENQUANTO (senha == nome) FAÇA{
+            SE (senha == nome){
+                ESCREVA ("Erro. Seu nome de usuario é igual a senha, tente novamente")
+
+                ESCREVA ("Insira seu nome de usuario:")
+                LEIA (nome)
+
+                ESCREVA ("Insira sua senha:")
+                LEIA (senha) 
+            }
+
+            SE (nome != senha){
+            ESCREVA ("Muito obrigado, E bem vindo!!!")
+        }
+        }
+    }
+}

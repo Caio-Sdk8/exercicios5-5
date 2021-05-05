@@ -1,0 +1,77 @@
+Programa{
+    var certo
+    caractere  nome
+    inteiro idade
+    real salário
+    caractere estadocivil
+
+    inicio{
+        ESCREVA ("Olá usuario, forneça as seguintes informações para o cadastro")
+
+        ESCREVA ("Seu Nome: ")
+        LEIA (nome)
+
+        ENQUANTO (nome == "") FAÇA{
+            ESCREVA ("Seu nome foi deixado em branco, preencha novamente")
+
+            ESCREVA ("Seu Nome: ")
+            LEIA (nome)
+        }
+
+        ESCREVA ("Sua idade: ")
+        LEIA (idade)
+
+        ENQUANTO (idade > 150) FAÇA{
+            ESCREVA ("Sua idade é invalida, digite novamente uma idade válida")
+
+            ESCREVA ("Sua idade: ")
+            LEIA (idade)
+        }
+
+        ENQUANTO (idade < 0) FAÇA{
+            ESCREVA ("Sua idade é invalida, digite novamente uma idade válida")
+
+            ESCREVA ("Sua idade: ")
+            LEIA (idade)
+        }
+
+        ESCREVA ("Seu salário: ")
+        LEIA (salário)
+
+        ENQUANTO (salário <= 0) FAÇA{
+            ESCREVA ("Seu salário é inválida, digite novamente um salário válido")
+
+            ESCREVA ("Seu salário: ")
+            LEIA (salário)
+        }
+
+        ESCREVA ("Estado civil (somente com as letras: s - solteiro, c - casado, v - viuvo, d - divorciado):")
+        LEIA (estadocivil)
+
+        ENQUANTO (certo == false) FAÇA{}
+        ESCOLHA (estadocivil){
+            Caso "s":
+               ESCREVA ("Cadastro completo")
+               certo = verdadeiro;
+            Caso "c":
+               ESCREVA ("Cadastro completo")
+               certo = verdadeiro;
+            Caso "v":
+               ESCREVA ("Cadastro completo")
+               certo = verdadeiro;
+            Caso "d":
+               ESCREVA ("Cadastro completo")
+               certo = verdadeiro;
+            Outrocaso:
+               certo = falso;
+               ESCREVA ("Seu estado civil é inválido, digite novamente um estado civil válido")
+
+               ESCREVA ("Estado civil (somente com as letras: s - solteiro, c - casado, v - viuvo, d - divorciado):")
+               LEIA (estadocivil)
+        }
+
+        ESCREVA ("Tenha um bom dia.")
+
+    }
+
+}
